@@ -1,0 +1,1127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>ProproproP</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,600,600i,700,700i"
+    rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+  <link href="./style.scss" rel="stylesheet">
+  <style>
+    .align-right {
+      text-align: right;
+      border: 0;
+
+    }
+
+    .bot {
+      font-family: "Raleway", sans-serif;
+      font-weight: 500;
+      font-size: 16px;
+      letter-spacing: 1px;
+      display: inline-block;
+      width: 20%;
+      padding: 8px 30px;
+      border-radius: 8px;
+      transition: 0.5s;
+      margin: 10px;
+      border: none;
+      color: #fff;
+      background: #37bca0;
+    }
+
+    .bot1 {
+      font-family: "Raleway", sans-serif;
+      font-weight: 300;
+      font-size: 14px;
+      letter-spacing: 1px;
+      display: inline-block;
+      padding: 8px 30px;
+      border-radius: 8px;
+      transition: 0.5s;
+      margin: 10px;
+      border: none;
+      color: #fff;
+      background: #37bca0;
+    }
+
+
+    .color {
+      background: linear-gradient(to right, #e1e0ff, #d7fadd);
+    }
+
+
+    h1 {
+      padding-bottom: 40px;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      font-size: 16px;
+    }
+
+    p {
+      padding-bottom: 15px;
+    }
+
+    /* p:last-of-type {
+      padding-bottom: 0;
+    } */
+
+    .try-again {
+      cursor: pointer;
+      position: relative;
+      font-size: 16px;
+    }
+
+    .try-again:after {
+      content: '';
+      position: absolute;
+      left: 15px;
+      right: 15px;
+      height: 1px;
+      top: 100%;
+      background: #ebebeb;
+      margin-top: 8px;
+      transition: all 0.3s ease;
+    }
+
+    .try-again:hover:after {
+      left: 40%;
+      right: 40%;
+    }
+
+    .wrapper {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .button {
+      cursor: pointer;
+      position: relative;
+      z-index: 2;
+      -webkit-appearance: none;
+      background: none;
+      outline: none;
+      border: none;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      border-radius: 2px;
+      transition: all 0.5s ease;
+      font-weight: 600;
+      font-size: 14px;
+      height: 60px;
+      width: 110px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid rgba(0, 0, 0, 0.06);
+      border-radius: 0px;
+      box-shadow: 0 0 0 white, 0 0 0 white;
+    }
+
+    .button-text {
+      display: inline-block;
+      position: relative;
+      z-index: 2;
+      background: linear-gradient(to right, #504bff, #4cfa63);
+
+    }
+
+    .button-circle {
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: 6px;
+      width: 6px;
+      border-radius: 50%;
+      box-shadow: 0 0 10px #504bff, 0 0 20px #504bff, 0 0 30px #504bff;
+      transition: all 0.5s ease;
+    }
+
+    .button-circle2 {
+      top: auto;
+      bottom: 0;
+    }
+
+    .button-circle3 {
+      left: auto;
+      right: 0;
+      box-shadow: 0 0 10px #4cfa63, 0 0 20px #4cfa63, 0 0 30px #4cfa63;
+    }
+
+    .button-circle4 {
+      left: auto;
+      top: auto;
+      bottom: 0;
+      right: 0;
+      box-shadow: 0 0 10px #4cfa63, 0 0 20px #4cfa63, 0 0 30px #4cfa63;
+    }
+
+    .button:hover {
+      box-shadow: -15px 0 70px -15px #504bff, 15px 0 70px -15px #4cfa63;
+    }
+
+    .button:hover .button-circle1 {
+      transform: translate(-15px, -15px) scale(0);
+    }
+
+    .button:hover .button-circle2 {
+      transform: translate(-15px, 15px) scale(0);
+    }
+
+    .button:hover .button-circle3 {
+      transform: translate(15px, -15px) scale(0);
+    }
+
+    .button:hover .button-circle4 {
+      transform: translate(15px, 15px) scale(0);
+    }
+
+    .button:hover .button-circle {
+      box-shadow: none;
+    }
+
+    .popup, .popup1, .popup2, .popup3, .popup4, .popup5 {
+      opacity: 0;
+      visibility: hidden;
+      height: 400px;
+      width: 700px;
+      flex-shrink: 0;
+      border-radius: 3px;
+      position: relative;
+      z-index: 3;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.2s ease
+    }
+
+    .popup-inside ,.popup1-inside, .popup2-inside, .popup3-inside, .popup4-inside, .popup5-inside {
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: 100%;
+      width: 100%;
+      overflow: hidden;
+      border-radius: 50%;
+      box-shadow: 0 0 0 black;
+      transition:
+        box-shadow 0.5s ease 0.7s,
+        border-radius 0.35s ease 0.7s;
+    }
+
+    .backgrounds {
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: 100%;
+      width: 100%;
+      overflow: hidden;
+    }
+
+    .background {
+      --offset: 0;
+      position: absolute;
+      left: var(--offset);
+      right: var(--offset);
+      bottom: var(--offset);
+      top: var(--offset);
+      background: linear-gradient(to right, #504bff, #4cfa63);
+      transform: scale(0);
+      transition: all 0.5s ease 0s;
+      border-radius: 50%;
+    }
+
+    .background2 {
+      --offset: 10%;
+      position: absolute;
+      left: var(--offset);
+      right: var(--offset);
+      bottom: var(--offset);
+      top: var(--offset);
+      background: linear-gradient(to right, #6665ff, #69fa7f);
+      transform: scale(0);
+      transition: all 0.5s ease 0.1s;
+    }
+
+    .background3 {
+      --offset: 20%;
+      position: absolute;
+      left: var(--offset);
+      right: var(--offset);
+      bottom: var(--offset);
+      top: var(--offset);
+      background: linear-gradient(to right, #8583ff, #85fa99);
+      z-index: 2;
+      transition: all 0.5s ease 0.2s;
+    }
+
+    .background4 {
+      --offset: 30%;
+      position: absolute;
+      left: var(--offset);
+      right: var(--offset);
+      bottom: var(--offset);
+      top: var(--offset);
+      background: linear-gradient(to right, #aaaaff, #a7fab7);
+      z-index: 3;
+      transition: all 0.5s ease 0.3s;
+    }
+
+    .background5 {
+      --offset: 40%;
+      position: absolute;
+      left: var(--offset);
+      right: var(--offset);
+      bottom: var(--offset);
+      top: var(--offset);
+      background: linear-gradient(to right, #c9c8ff, #c3fad1);
+      z-index: 4;
+      transition: all 0.5s ease 0.4s;
+    }
+
+    .background6 {
+      --offset: 40%;
+      position: absolute;
+      left: var(--offset);
+      right: var(--offset);
+      bottom: var(--offset);
+      top: var(--offset);
+      background: white;
+      z-index: 5;
+      transition: all 0.8s ease 0.4s;
+    }
+
+    .content {
+      --offset: 0;
+      position: absolute;
+      left: var(--offset);
+      right: var(--offset);
+      bottom: var(--offset);
+      top: var(--offset);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      transition: all 0.35s ease 0.75s;
+      z-index: 10;
+      background-color: #9af5e1;
+      padding: 120px;
+    }
+
+    .content-wrapper {
+
+      color: black;
+    }
+
+    body.active .content {
+      opacity: 1;
+      transform: none;
+    }
+
+    body.active .popup {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    body.active .popup-inside {
+      border-radius: 0;
+      box-shadow: -50px 0 200px -50px #504bff, 50px 0 200px -50px #4cfa63;
+    }
+
+    body.active .background {
+      transform: scale(1);
+    }
+
+    body.active .background6 {
+      transform: scale(8);
+    }
+
+
+    body.active1 .content {
+      opacity: 1;
+      transform: none;
+    }
+
+    body.active1 .popup1 {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    body.active1 .popup1-inside {
+      border-radius: 0;
+      box-shadow: -50px 0 200px -50px #504bff, 50px 0 200px -50px #4cfa63;
+    }
+
+    body.active1 .background {
+      transform: scale(1);
+    }
+
+    body.active1 .background6 {
+      transform: scale(8);
+    }
+
+    body.active2 .content {
+      opacity: 1;
+      transform: none;
+    }
+
+    body.active2 .popup2 {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    body.active2 .popup2-inside {
+      border-radius: 0;
+      box-shadow: -50px 0 200px -50px #504bff, 50px 0 200px -50px #4cfa63;
+    }
+
+    body.active2 .background {
+      transform: scale(1);
+    }
+
+    body.active2 .background6 {
+      transform: scale(8);
+    }
+
+    body.active3 .content {
+      opacity: 1;
+      transform: none;
+    }
+
+    body.active3 .popup3 {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    body.active3 .popup3-inside {
+      border-radius: 0;
+      box-shadow: -50px 0 200px -50px #504bff, 50px 0 200px -50px #4cfa63;
+    }
+
+    body.active3 .background {
+      transform: scale(1);
+    }
+
+    body.active3 .background6 {
+      transform: scale(8);
+    }
+
+    body.active4 .content {
+      opacity: 1;
+      transform: none;
+    }
+
+    body.active4 .popup4 {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    body.active4 .popup4-inside {
+      border-radius: 0;
+      box-shadow: -50px 0 200px -50px #504bff, 50px 0 200px -50px #4cfa63;
+    }
+
+    body.active4 .background {
+      transform: scale(1);
+    }
+
+    body.active4 .background6 {
+      transform: scale(8);
+    }
+
+    body.active5 .content {
+      opacity: 1;
+      transform: none;
+    }
+
+    body.active5 .popup5 {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    body.active5 .popup5-inside {
+      border-radius: 0;
+      box-shadow: -50px 0 200px -50px #504bff, 50px 0 200px -50px #4cfa63;
+    }
+
+    body.active5 .background {
+      transform: scale(1);
+    }
+
+    body.active5 .background6 {
+      transform: scale(8);
+    }
+
+    .bott {
+      font-family: "Raleway", sans-serif;
+      font-weight: 300;
+      font-size: 14px;
+      letter-spacing: 1px;
+      display: inline-block;
+      width: 100%;
+      padding: 8px 30px;
+      border-radius: 8px;
+      transition: 0.5s;
+      margin: 10px;
+      border: none;
+      color: #fff;
+      background: #37bca0;
+    }
+
+    .grid-container {
+      display: grid;
+      grid-template-columns: auto auto auto auto;
+      column-gap: 12px;
+      row-gap: 12px;
+      background-color: none;
+      padding: 10px;
+    }
+
+    .estate-container{
+      display: grid;
+      grid-template-columns: auto auto auto;
+      column-gap: 15px;
+      row-gap: 15px;
+      background-color: white;
+      padding: 10px;
+    }
+
+    .card{
+      /* margin:0 10px; */
+      border: none !important;
+    }
+
+    .card-text{
+      font-family: inherit;
+    }
+
+    .card-gray-text{
+      color: gray;
+    }
+
+    .card-img-top{
+      padding: 20px 20px 0 20px;
+    }
+
+    .pad-0{
+      padding-bottom: 0;
+      margin-bottom: 0;
+    }
+
+    .fancy-body{
+      text-align: left;
+      padding-top: 5px;
+    }
+
+    .card-blocks {
+      background-color: #10b38f;
+      border: 1px solid #4CAEE3;
+      text-align: center;
+      font-size: 14px;
+      align-items: center;
+      width: 125px;
+      height: 125px;
+      margin: auto;
+      text-align: center;
+      vertical-align: middle;
+      line-height: 100px;
+      /* box-shadow: 1px 1px 40px 10px rgb(81 105 242 / 75%); */
+    }
+    .room-choose-card{
+      background-color: #10b38f;
+      border: 1px solid #4CAEE3;
+      text-align: center;
+      font-size: 16px;
+      align-items: center;
+      position: relative;
+      width: 100px;
+      height: 100px;
+      margin: auto;
+      text-align: center;
+      vertical-align: middle;
+      /* line-height: 100px; */
+      /* box-shadow: 1px 1px 40px 10px rgb(81 105 242 / 75%); */
+    }
+
+    .room-choose-card1{
+      background-color: #10b38f;
+      border: 1px solid #4CAEE3;
+      text-align: center;
+      font-size: 16px;
+      align-items: center;
+      position: relative;
+      width: 80px;
+      height: 100px;
+      margin: auto;
+      text-align: center;
+      vertical-align: middle;
+      /* line-height: 100px; */
+      /* box-shadow: 1px 1px 40px 10px rgb(81 105 242 / 75%); */
+    }
+    .room-choose-card:hover{
+      background-color: #9af5e1;
+
+    }
+    .hdb-btn{
+      border: 1px solid #0000ffba;
+      color: #0000ffba;
+      border-radius: 5px;
+    }
+    .neg-btn{
+      border: 1px solid gray;
+      border-radius: 5px;
+      padding: 0 5px;
+      font-size: 12px;
+      background-color: lightgray;
+    }
+    .bold{
+      font-weight: bold;
+    }
+    .size-12{
+      font-size: 12px;
+    }
+    .close {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  border: 1px white;
+  background-color: #10b38f;
+}
+  </style>
+
+  <!-- =======================================================
+  * Template Name: Siimple - v4.7.0
+  * Template URL: https://bootstrapmade.com/free-bootstrap-landing-page/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <div class="container-fluid">
+    <div class="align-right">
+      <button class="bot" type="button">Create Owner Account</button>
+
+    </div>
+    <div class="align-right">
+      <button class="bot" type="button">Create Agent Account</button>
+
+    </div>
+    <div class="align-right">
+      <button class="bot" type="button">Login to Edit/Post</button>
+
+    </div>
+    <div class="align-right">
+      <button class="bot" type="button">Change/Recover Password</button>
+
+    </div>
+
+
+
+  </div>
+
+  <!-- <header id="header">
+
+
+
+  </header> -->
+  <!-- End #header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero">
+
+    <div class="hero-container">
+
+      <div class="logo">
+
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>
+      </div>
+
+      <br>
+      <br>
+      <form class="php-email-form">
+        <div class="text-center">
+
+          <button type="submit" onclick="document.body.classList.add('active')" class="button-text">Buy</button>
+          <button type="submit" onclick="document.body.classList.add('active')" class="button-text">Rent</button>
+
+          <!-- Buy-Type -->
+          <div class="wrapper">
+            <div class="popup">
+              <div class="popup-inside">
+                <div class="backgrounds">
+                  <div class="background"></div>
+                  <div class="background background2"></div>
+                  <div class="background background3"></div>
+                  <div class="background background4"></div>
+                  <div class="background background5"></div>
+                  <div class="background background6"></div>
+                </div>
+              </div>
+              <div class="content">
+                <div class="content-wrapper">
+                  <div class="col-md-12 mb-2">
+                    <div class="form-group mt-3">
+                      <p class="bott">Buy-Type<br></p><button class="close" onclick="document.body.classList.remove('active')">X</button>
+                      <!-- <br>
+                      <br> -->
+                      <div class="grid-container">
+                        <div class="card-blocks" type="button" onclick="document.body.classList.add('active1')">HDB</div>
+                        <div class="card-blocks" type="button" onclick="document.body.classList.add('active1')">Condo</div>
+                        <div class="card-blocks" type="button" onclick="document.body.classList.add('active1')">Landed</div>
+                        <div class="card-blocks" type="button" onclick="document.body.classList.add('active1')">Retail</div>
+                        <div class="card-blocks" type="button" onclick="document.body.classList.add('active1')">Industrial/Land</div>
+                        <div class="card-blocks" type="button" onclick="document.body.classList.add('active1')">Office</div>
+                        <div class="card-blocks" type="button" onclick="document.body.classList.add('active1')">New Launches</div>
+                        <div class="card-blocks" type="button" onclick="document.body.classList.add('active1')">Foreign Properties</div>
+                        <!-- <option value="2">Office</option> -->
+
+                      <!-- </div>  <div class="grid-container">
+                        <div class="card-blocks">HDB</div>
+                        <div class="card-blocks">Condo</div>
+                        <div class="card-blocks">Landed</div>
+                        <div class="card-blocks">Retail</div>
+                        <div class="card-blocks">New Launch</div>
+                        <div class="card-blocks">Industrial</div>
+                        <!-- <option value="2">Office</option> -->
+
+                      <!-- </div> -->
+                    </div>
+                  </div>
+                  <div>
+                    <p class="bot1" onclick="document.body.classList.remove('active')">Back</p>
+                    <!-- <p class="bot1" onclick="document.body.classList.add('active1')">Select</p> -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Buy-Type -> Room -->
+          <div class="wrapper">
+            <div class="popup1">
+              <div class="popup1-inside">
+                <div class="backgrounds">
+                  <div class="background"></div>
+                  <div class="background background2"></div>
+                  <div class="background background3"></div>
+                  <div class="background background4"></div>
+                  <div class="background background5"></div>
+                  <div class="background background6"></div>
+                </div>
+              </div>
+              <div class="content">
+                <div class="content-wrapper">
+                  <div class="col-md-12 mb-2">
+                    <div class="form-group mt-3">
+                      <p class="bott">Buy-Type -> HDB -> Room<br></p><button onclick="document.body.classList.remove('active1')"class="close">X</button>
+                      <!-- <br>
+                      <br> -->
+                      <div class="grid-container">
+                        <div class="room-choose-card" type="button">
+                          <div style="top: 35px;position: inherit;" onclick="document.body.classList.add('active2')">1 ROOM </div>
+                          <div style="position: absolute;top:0;right: -8px;"><input style="width: 20px;height: 20px;" type="checkbox"></div>
+                        </div>
+                        <div class="room-choose-card" type="button">
+                          <div style="top: 35px;position: inherit;" onclick="document.body.classList.add('active2')" >2 Room </div>
+                          <div style="position: absolute;top:0;right: -8px;"><input style="width: 20px;height: 20px;" type="checkbox"></div>
+                        </div>
+                        <div class="room-choose-card" type="button">
+                          <div style="top: 35px;position: inherit;" onclick="document.body.classList.add('active2')">3 Room </div>
+                          <div style="position: absolute;top:0;right: -8px;"><input style="width: 20px;height: 20px;" type="checkbox"></div>
+                        </div>
+                        <div class="room-choose-card" type="button">
+                          <div style="top: 35px;position: inherit;" onclick="document.body.classList.add('active2')">4 Room </div>
+                          <div style="position: absolute;top:0;right: -8px;"><input style="width: 20px;height: 20px;" type="checkbox"></div>
+                        </div>
+                        <div class="room-choose-card" type="button">
+                          <div style="top: 35px;position: inherit;" onclick="document.body.classList.add('active2')">5 Room </div>
+                          <div style="position: absolute;top:0;right: -8px;"><input style="width: 20px;height: 20px;" type="checkbox"></div>
+                        </div>
+                        <div class="room-choose-card" type="button">
+                          <div style="top: 35px;position: inherit;" onclick="document.body.classList.add('active2')">Executive & Jumbo </div>
+                          <div style="position: absolute;top:0;right: -8px;"><input style="width: 20px;height: 20px;" type="checkbox"></div>
+                        </div>
+                        <div class="room-choose-card" type="button">
+                          <div style="top: 35px;position: inherit;" onclick="document.body.classList.add('active2')">Others</div>
+                          <div style="position: absolute;top:0;right: -8px;"><input style="width: 20px;height: 20px;" type="checkbox"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div>
+                    <p onclick="document.body.classList.remove('active1')" class="bot1">Back</p>
+                    <p class="bot1" onclick="document.body.classList.add('active2')">Select Multiple</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+           <!-- Buy-Type -> Room -> Estate -> Price -->
+           <div class="wrapper">
+            <div class="popup2">
+              <div class="popup2-inside">
+                <div class="backgrounds">
+                  <div class="background"></div>
+                  <div class="background background2"></div>
+                  <div class="background background3"></div>
+                  <div class="background background4"></div>
+                  <div class="background background5"></div>
+                  <div class="background background6"></div>
+                </div>
+              </div>
+              <div class="content">
+                <div class="content-wrapper">
+                  <div class="col-md-12 mb-2">
+                    <div class="form-group mt-3">
+                      <p class="bott">Buy-Type -> HDB -> Room -> Estate<br></p><button onclick="document.body.classList.remove('active2')"class="close">X</button>
+                      
+                      <div class="estate-container">
+                        <div class="d-flex">
+                          <div><input style="width: 20px;height: 20px;" type="checkbox"></div>
+                          <div>Ang mo kio</div>
+                        </div>
+                        <div class="d-flex">
+                          <div><input style="width: 20px;height: 20px;" type="checkbox"></div>
+                          <div>Bedok</div>
+                        </div>
+                        <div class="d-flex">
+                          <div><input style="width: 20px;height: 20px;" type="checkbox"></div>
+                          <div>Bishan</div>
+                        </div>
+                        <div class="d-flex">
+                          <div><input style="width: 20px;height: 20px;" type="checkbox"></div>
+                          <div>Bukit Badok</div>
+                        </div>
+                        <div class="d-flex">
+                          <div><input style="width: 20px;height: 20px;" type="checkbox"></div>
+                          <div>Bukit Merah</div>
+                        </div>
+                        <div class="d-flex">
+                          <div><input style="width: 20px;height: 20px;" type="checkbox"></div>
+                          <div>Bukit Panjang</div>
+                        </div>
+                        <div class="d-flex">
+                          <div><input style="width: 20px;height: 20px;" type="checkbox"></div>
+                          <div>Bukit Timah</div>
+                        </div>
+                        <div class="d-flex">
+                          <div><input style="width: 20px;height: 20px;" type="checkbox"></div>
+                          <div>Central Area</div>
+                        </div>
+                        <div class="d-flex">
+                          <div><input style="width: 20px;height: 20px;" type="checkbox"></div>
+                          <div>Clementi</div>
+                        </div>
+                        <div class="d-flex">
+                          <div><input style="width: 20px;height: 20px;" type="checkbox"></div>
+                          <div>Geylang</div>
+                        </div>
+                        <div class="d-flex">
+                          <div><input style="width: 20px;height: 20px;" type="checkbox"></div>
+                          <div>Hougang</div>
+                        </div>
+                        <div class="d-flex">
+                          <div><input style="width: 20px;height: 20px;" type="checkbox"></div>
+                          <div>Jurong East</div>
+                        </div>
+                        <div class="d-flex">
+                          <div><input style="width: 20px;height: 20px;" type="checkbox"></div>
+                          <div>Jurong West</div>
+                        </div>
+                        <div class="d-flex">
+                          <div><input style="width: 20px;height: 20px;" type="checkbox"></div>
+                          <div>Hougang</div>
+                        </div>
+                        <div class="d-flex">
+                          <div><input style="width: 20px;height: 20px;" type="checkbox"></div>
+                          <div>Jurong East</div>
+                        </div>
+                        <div class="d-flex">
+                          <div><input style="width: 20px;height: 20px;" type="checkbox"></div>
+                          <div>Jurong West</div>
+                        </div>      <div class="d-flex">
+                          <div><input style="width: 20px;height: 20px;" type="checkbox"></div>
+                          <div>Hougang</div>
+                        </div>
+                        <div class="d-flex">
+                          <div><input style="width: 20px;height: 20px;" type="checkbox"></div>
+                          <div>Jurong East</div>
+                        </div>
+                        <!-- <div class="d-flex" text-align="right">
+                            <div><input style="width: 20px;height: 20px;" type="checkbox"></div>
+                            <div>Jurong West</div>
+                                         
+                        </div> -->
+                      </div>
+                    </div>
+                  </div>
+                  <div>
+                    <p onclick="document.body.classList.remove('active2')" class="bot1">Back</p>
+                    <p class="bot1" onclick="document.body.classList.add('active3')">Search</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Buy-Type -> Room -> Price -->
+          <div class="wrapper">
+            <div class="popup3">
+              <div class="popup3-inside">
+                <div class="backgrounds">
+                  <div class="background"></div>
+                  <div class="background background2"></div>
+                  <div class="background background3"></div>
+                  <div class="background background4"></div>
+                  <div class="background background5"></div>
+                  <div class="background background6"></div>
+                </div>
+              </div>
+              <div class="content">
+                <div class="content-wrapper">
+                  <div class="col-md-12 mb-2">
+                    <div class="form-group mt-3">
+                      <p class="bott">Buy-Type -> HDB -> Room -> Estate-> Price<br></p><button onclick="document.body.classList.remove('active3')"class="close">X</button>
+                      <!-- <br>
+                      <br> -->
+                      <div class="grid-container">
+                        <div class="room-choose-card" type="button"onclick="document.body.classList.add('active4')">
+                          <div style="top: 35px;position: inherit;"><$250,000</div>
+                          <div style="position: absolute;top:0;right: -8px;"><input style="width: 20px;height: 20px;" type="checkbox"></div>
+                        </div>
+                        <div class="room-choose-card" type="button"onclick="document.body.classList.add('active4')">
+                          <div style="top: 35px;position: inherit;"onclick="document.body.classList.add('active4')">$250,001 -$500,000 </div>
+                          <div style="position: absolute;top:0;right: -8px;"><input style="width: 20px;height: 20px;" type="checkbox"></div>
+                        </div>
+                        <div class="room-choose-card" type="button"onclick="document.body.classList.add('active4')">
+                            <div style="top: 35px;position: inherit;">$500,001 -$750,000</div>
+                          <div style="position: absolute;top:0;right: -8px;"><input style="width: 20px;height: 20px;" type="checkbox"></div>
+                        </div>
+                        <div class="room-choose-card" type="button"onclick="document.body.classList.add('active4')">
+                            <div style="top: 35px;position: inherit;">$750,001 -$1,000,000 </div>
+                          <div style="position: absolute;top:0;right: -8px;"><input style="width: 20px;height: 20px;" type="checkbox"></div>
+                        </div>
+                        <div class="room-choose-card" type="button"onclick="document.body.classList.add('active4')">
+                            <div style="top: 35px;position: inherit;">>$1,000,000 </div>
+                          <div style="position: absolute;top:0;right: -8px;"><input style="width: 20px;height: 20px;" type="checkbox"></div>
+                        </div>
+                        <!-- <div class="room-choose-card" type="button"onclick="document.body.classList.add('active4')">
+                            <div style="top: 35px;position: inherit;">$1,000,000 - $1,500,000 </div>
+                          <div style="position: absolute;top:0;right: -8px;"><input style="width: 20px;height: 20px;" type="checkbox"></div>
+                        </div> -->
+                      </div>
+                    </div>
+                  </div>
+                  <div>
+                    <p onclick="document.body.classList.remove('active3')" class="bot1">Back</p>
+                    <p class="bot1" onclick="document.body.classList.add('active4')">Select Multiple</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+         
+          <!-- Buy-Type -> Room -> Estate -> Price ->  -->
+          <div class="wrapper">
+            <div class="popup4">
+              <div class="popup4-inside">
+                <div class="backgrounds">
+                  <div class="background"></div>
+                  <div class="background background2"></div>
+                  <div class="background background3"></div>
+                  <div class="background background4"></div>
+                  <div class="background background5"></div>
+                  <div class="background background6"></div>
+                </div>
+              </div>
+              <div class="content">
+                <div class="content-wrapper">
+                  <p class="bott">Buy-Type -> HDB -> Room -> Estate -> Price -> Listing<br></p><button onclick="document.body.classList.remove('active4')"class="close">X</button>
+                     
+                  <div style="background-color: white">
+                    <!-- <div >
+                      <label for="cars">Sort by:</label>
+                      <select name="cars" id="cars">
+                      <option value="volvo">Low to High</option>
+                      <option value="saab">High to Low</option>
+                    </select> -->
+                    <!-- </div> -->
+                    <div style="text-align:left;padding:0 5px">8 Other Properties for sale
+                      <span style="float: right;margin-left: auto" onclick="document.body.classList.add('active5')">View all</span>
+                    </div>
+                    <div class="card-group">
+                      <div class="card" onclick="document.body.classList.add('active5')">
+                        <img src="./assets/img/img3.jpg" class="card-img-top" alt="...">
+                        <div class="card-body fancy-body">
+                          <h5 class="card-text pad-0">$50000</h5>
+                          <div style="display: flex">
+                            <div style="font-weight:bold;padding:0 7px;"><i class="fa fa-bed"></i>1</div>
+                            <div style="font-weight:bold;padding:0 7px;"><i class="fa fa-bath"></i>1</div>
+                          </div>
+                          <p class="card-text pad-0">510 Avg avenue new</p>
+                          <p class="card-gray-text pad-0">510 Avg avenue new</p>
+                          <button class="hdb-btn">HDB Flat</button>
+                        </div>
+                      </div>
+                      <div class="card" onclick="document.body.classList.add('active5')">
+                        <img src="./assets/img/img3.jpg" class="card-img-top" alt="...">
+                        <div class="card-body fancy-body">
+                          <h5 class="card-text pad-0">$20000</h5>
+                          <div style="display: flex">
+                            <div style="font-weight:bold;padding:0 7px;"><i class="fa fa-bed"></i>1</div>
+                            <div style="font-weight:bold;padding:0 7px;"><i class="fa fa-bath"></i>1</div>
+                          </div>
+                          <p class="card-text pad-0">510 Avg avenue new</p>
+                          <p class="card-gray-text pad-0">510 Avg avenue new</p>
+                          <button class="hdb-btn">HDB Flat</button>
+                        </div>
+                      </div>
+                      <div class="card" onclick="document.body.classList.add('active5')">
+                        <img src="./assets/img/img3.jpg" class="card-img-top" alt="...">
+                        <div class="card-body fancy-body">
+                          <h5 class="card-text pad-0">$80000</h5>
+                          <div style="display: flex">
+                            <div style="font-weight:bold;padding:0 7px;"><i class="fa fa-bed"></i>1</div>
+                            <div style="font-weight:bold;padding:0 7px;"><i class="fa fa-bath"></i>1</div>
+                          </div>
+                          <p class="card-text pad-0">510 Avg avenue new</p>
+                          <p class="card-gray-text pad-0">510 Avg avenue new</p>
+                          <button class="hdb-btn">HDB Flat</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div style="text-align: left">
+                    <!-- <p onclick="document.body.classList.add('active5')" class="bot1">Next</p> -->
+                    <p onclick="document.body.classList.remove('active4')" class="bot1">Back</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Buy-Type -> Room -> Price -> Estate -> Listing (Final) -->
+          <div class="wrapper">
+            <div class="popup5">
+              <div class="popup5-inside">
+                <div class="backgrounds">
+                  <div class="background"></div>
+                  <div class="background background2"></div>
+                  <div class="background background3"></div>
+                  <div class="background background4"></div>
+                  <div class="background background5"></div>
+                  <div class="background background6"></div>
+                </div>
+              </div>
+              <div class="content"><button class="close" onclick="document.body.classList.remove('active5')">X</button>
+                <div class="content-wrapper">
+                  <div style="background-color: white">
+                    <div class="card-group">
+                      <div class="card">
+                        <img src="./assets/img/img3.jpg" alt="...">                       
+                      </div>
+                      <div class="card">
+                        <img src="./assets/img/img3.jpg" alt="...">
+                      </div>
+                      <div class="card">
+                        <img src="./assets/img/img3.jpg" alt="...">
+                      </div>
+                    </div>
+                    <div style="text-align: left">
+                        <div style="padding: 0 5px;">
+                          <span style="font-size: 30px;font-weight: 500;">$3,50,000 </span>
+                          <span class="neg-btn">negotiable</span>
+                          <span style="float: right;margin-left:auto;padding:10px 5px;color:red"><i class='fa fa-flag'></i>Report Listing</span>
+                          <span style="float: right;margin-left:auto;padding:10px 5px;color:red" ><i class='fa fa-file'></i></i>PDF</span>
+                          <span style="float: right;margin-left:auto;padding:10px 5px;color:red"><i class="fa fa-share" aria-hidden="true"></i>Share</span>
+                          <span style="float: right;margin-left:auto;padding:10px 5px;color:red"><i class="fa fa-eye"></i>Restore</span>
+                          <span style="float: right;margin-left:auto;padding:10px 5px;color:red"><i class="fa fa-heart"></i>Shortlist</span>
+                        </div>
+                        <div style="display: flex">
+                          <div style="font-weight:bold;padding:0 7px;"><i class="fa fa-bed"></i>1</div>
+                          <div style="font-weight:bold;padding:0 7px;"><i class="fa fa-bath"></i>1</div>
+                          <div style="font-weight:bold;padding:0 7px;">474 sqft</div>
+                          <div style="font-weight:bold;padding:0 7px;">s$ 738.67 psf</div> 
+                        </div>
+                        <div style="padding: 5px">
+                          <div style="padding: 3px 0">
+                            <p class="pad-0 bold">510 Aug aveune new one</p>
+                            <p class="pad-0">510 Aug aveune new one tsk gshi</p>
+                          </div>
+                          <div style="padding: 3px 0">
+                            <p class="pad-0 size-12 bold"><i class='fa-solid fa-person-walking'></i>Nearby stations</p>
+                            <p class="pad-0">5 mins to (380m) to CR11/NS6 Ang Mo Kio MRT </p>
+                          </div>
+                        </div>
+                    </div>
+                  </div>
+                  <div style="text-align: left">
+                    <p onclick="document.body.classList.remove('active5')" class="bot1">Back</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <br>
+
+
+        <!-- <div class="row no-gutters">
+          <div class="col-md-6 form-group pr-md-1">
+            <input type="text" name="name" class="form-control" id="name" placeholder="Search">
+
+          </div>
+
+        </div> -->
+
+        <br>
+
+
+        <div class="text-center"><button type="submit">Find a Lawyer</button>
+          <button type="submit">Get a Bank Loan</button>
+        </div>
+      </form>
+    </div>
+  </section>
+  </section><!-- #hero -->
+
+
+
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
