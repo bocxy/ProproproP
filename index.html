@@ -624,7 +624,7 @@
 <body>
 
   <!-- ======= Header ======= -->
-  <div class="container-fluid">
+  <div class="container-fluid" >
     <div class="align-right">
       <button class="bot" type="button">Create Owner Account</button>
 
@@ -715,7 +715,7 @@
                       <!-- </div> -->
                     </div>
                   </div>
-                  <div>
+                  <div type="button">
                     <p class="bot1" onclick="document.body.classList.remove('active')">Back</p>
                     <!-- <p class="bot1" onclick="document.body.classList.add('active1')">Select</p> -->
                   </div>
@@ -740,7 +740,7 @@
                 <div class="content-wrapper">
                   <div class="col-md-12 mb-2">
                     <div class="form-group mt-3">
-                      <p class="bott">Buy-Type -> HDB -> Room<br></p><button onclick="document.body.classList.remove('active1')"class="close">X</button>
+                      <p class="bott">Buy-Type -> HDB -> Room<br></p><button onclick="document.body.classList.remove('active1','active')"class="close">X</button>
                       <!-- <br>
                       <br> -->
                       <div class="grid-container">
@@ -775,7 +775,7 @@
                       </div>
                     </div>
                   </div>
-                  <div>
+                  <div type="button">
                     <p onclick="document.body.classList.remove('active1')" class="bot1">Back</p>
                     <p class="bot1" onclick="document.body.classList.add('active2')">Select Multiple</p>
                   </div>
@@ -800,7 +800,7 @@
                 <div class="content-wrapper">
                   <div class="col-md-12 mb-2">
                     <div class="form-group mt-3">
-                      <p class="bott">Buy-Type -> HDB -> Room -> Estate<br></p><button onclick="document.body.classList.remove('active2')"class="close">X</button>
+                      <p class="bott">Buy-Type -> HDB -> Room -> Estate<br></p><button onclick="document.body.classList.remove('active2','active1','active')"class="close">X</button>
                       
                       <div class="estate-container">
                         <div class="d-flex">
@@ -882,7 +882,7 @@
                       </div>
                     </div>
                   </div>
-                  <div>
+                  <div type="button">
                     <p onclick="document.body.classList.remove('active2')" class="bot1">Back</p>
                     <p class="bot1" onclick="document.body.classList.add('active3')">Search</p>
                   </div>
@@ -907,7 +907,7 @@
                 <div class="content-wrapper">
                   <div class="col-md-12 mb-2">
                     <div class="form-group mt-3">
-                      <p class="bott">Buy-Type -> HDB -> Room -> Estate-> Price<br></p><button onclick="document.body.classList.remove('active3')"class="close">X</button>
+                      <p class="bott">Buy-Type -> HDB -> Room -> Estate-> Price<br></p><button onclick="document.body.classList.remove('active3','active2','active1','active')"class="close">X</button>
                       <!-- <br>
                       <br> -->
                       <div class="grid-container">
@@ -938,7 +938,7 @@
                       </div>
                     </div>
                   </div>
-                  <div>
+                  <div type="button">
                     <p onclick="document.body.classList.remove('active3')" class="bot1">Back</p>
                     <p class="bot1" onclick="document.body.classList.add('active4')">Select Multiple</p>
                   </div>
@@ -962,7 +962,7 @@
               </div>
               <div class="content">
                 <div class="content-wrapper">
-                  <p class="bott">Buy-Type -> HDB -> Room -> Estate -> Price -> Listing<br></p><button onclick="document.body.classList.remove('active4')"class="close">X</button>
+                  <p class="bott">Buy-Type -> HDB -> Room -> Estate -> Price -> Listing<br></p><button onclick="document.body.classList.remove('active4','active3','active2','active1','active')"class="close">X</button>
                      
                   <div style="background-color: white">
                     <!-- <div >
@@ -973,10 +973,10 @@
                     </select> -->
                     <!-- </div> -->
                     <div style="text-align:left;padding:0 5px">8 Other Properties for sale
-                      <span style="float: right;margin-left: auto" onclick="document.body.classList.add('active5')">View all</span>
+                      <span style="float: right;margin-left: auto" onclick="document.body.classList.add('active5')" type="button">View all</span>
                     </div>
                     <div class="card-group">
-                      <div class="card" onclick="document.body.classList.add('active5')">
+                      <div class="card" onclick="document.body.classList.add('active5')" type="button">
                         <img src="./assets/img/img3.jpg" class="card-img-top" alt="...">
                         <div class="card-body fancy-body">
                           <h5 class="card-text pad-0">$50000</h5>
@@ -989,7 +989,7 @@
                           <button class="hdb-btn">HDB Flat</button>
                         </div>
                       </div>
-                      <div class="card" onclick="document.body.classList.add('active5')">
+                      <div class="card" onclick="document.body.classList.add('active5')" type="button">
                         <img src="./assets/img/img3.jpg" class="card-img-top" alt="...">
                         <div class="card-body fancy-body">
                           <h5 class="card-text pad-0">$20000</h5>
@@ -1002,7 +1002,7 @@
                           <button class="hdb-btn">HDB Flat</button>
                         </div>
                       </div>
-                      <div class="card" onclick="document.body.classList.add('active5')">
+                      <div class="card" onclick="document.body.classList.add('active5')" type="button">
                         <img src="./assets/img/img3.jpg" class="card-img-top" alt="...">
                         <div class="card-body fancy-body">
                           <h5 class="card-text pad-0">$80000</h5>
@@ -1017,7 +1017,7 @@
                       </div>
                     </div>
                   </div>
-                  <div style="text-align: left">
+                  <div style="text-align: left" type="button">
                     <!-- <p onclick="document.body.classList.add('active5')" class="bot1">Next</p> -->
                     <p onclick="document.body.classList.remove('active4')" class="bot1">Back</p>
                   </div>
@@ -1038,7 +1038,7 @@
                   <div class="background background6"></div>
                 </div>
               </div>
-              <div class="content"><button class="close" onclick="document.body.classList.remove('active5')">X</button>
+              <div class="content"><button class="close" onclick="document.body.classList.remove('active5','active4','active3','active2','active1','active')">X</button>
                 <div class="content-wrapper">
                   <div style="background-color: white">
                     <div class="card-group">
@@ -1080,7 +1080,7 @@
                         </div>
                     </div>
                   </div>
-                  <div style="text-align: left">
+                  <div style="text-align: left" type="button">
                     <p onclick="document.body.classList.remove('active5')" class="bot1">Back</p>
                   </div>
                 </div>
